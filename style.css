@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(29, 27, 27);
+}
+.title{
+    text-align: center;
+    color: wheat;
+
+}
+h2{
+    text-transform: uppercase;
+    margin: 12px auto 3px;
+}
+.title p{
+    text-transform: capitalize;
+    color: rgba(128, 128, 128, 0.884);
+    width: 40%;
+    margin:17px auto;
+}
+.container{
+
+    background-color:rgb(48, 46, 46);;
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr ;
+}
+.img {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.img-box img , canvas{
+    max-width: 64vw;
+    max-height: 60vh;
+    border-radius: 10px;
+
+}
+
+.uplode input{
+    display: none;
+}
+.uplode label{
+    color: white;
+    text-transform:capitalize;
+    letter-spacing: 2px;
+    border: 2px white dotted;
+    padding: 4px;
+    cursor:pointer;
+}
+.filters{
+}
+.filters ul , .filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    direction: rtl;
+    color: white;
+    margin-right: 9px;
+}
+.filters ul li:last-child{
+    flex-direction: row;
+    margin: 20px ;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+.filters li a,span{
+    background-color: green;
+    padding: 5px 9px;
+    cursor: pointer;
+}
+.filters li a,span:hover{
+    background-color: rgb(14, 161, 14);
+}
+@media screen and (max-width:992px) {
+    .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .img-box img , canvas{
+        max-width: 100%;
+        max-height: 60vh;
+        border-radius: 10px;
+    
+    }
+    .title p{
+        text-transform: capitalize;
+        color: rgba(128, 128, 128, 0.884);
+        width: 80%;
+        margin:17px auto;
+    }
+
+}
